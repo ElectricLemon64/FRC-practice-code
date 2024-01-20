@@ -20,6 +20,7 @@ public final class Constants {
     public static final int secondaryPort = 1;
     public static final int intakeButtonNum = 1;
     public static final int outtakeButtonNum = 2;
+    public static final int stopIntakeButtonNum = 3;
   }
   public static class IntakeConstants{
     public static final int m1ID = 0;
