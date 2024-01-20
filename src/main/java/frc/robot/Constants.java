@@ -16,4 +16,23 @@ public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }
+  public static class JoystickConstants{
+    public static final int secondaryPort = 1;
+    public static final int intakeButtonNum = 1;
+    public static final int outtakeButtonNum = 2;
+  }
+  public static class IntakeConstants{
+    public static final int m1ID = 0;
+    public static final int m2ID = 1;
+    public static enum IntakeState {
+      INTAKE(0.5),
+      OUTTAKE(-0.5),
+      OFF(0);
+
+      public final double speed;
+      IntakeState(double speed){
+        this.speed = speed;
+      }
+    }
+  }
 }
